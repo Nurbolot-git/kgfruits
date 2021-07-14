@@ -1,6 +1,7 @@
 :root {
   --black: rgba(87, 87, 87, 1);
   --orange: rgba(251, 147, 0, 1);
+  --pink: rgba(255, 240, 220, 1);
 }
 html {
   box-sizing: border-box;
@@ -13,7 +14,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2.25rem;
 }
 .header__top {
   display: flex;
@@ -42,8 +43,7 @@ html {
   font-size: 16px;
   line-height: 130%;
 }
-.header__nav-link:focus,
-:hover {
+.header__nav-link:hover {
   text-transform: lowercase;
   color: var(--orange);
 }
@@ -65,4 +65,59 @@ li:nth-child(4) {
 }
 li:nth-child(5) {
   width: 155px;
+}
+.orange {
+  color: var(--orange);
+}
+.tag {
+  display: flex;
+  margin-top: 170px;
+}
+.tag-text {
+  color: var(--black);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 16px;
+  border-radius: 50px;
+  background-color: var(--pink);
+}
+.header__content-inner {
+  display: flex;
+}
+.header__content-title {
+  margin-top: 78px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 130%;
+  letter-spacing: -0.02rem;
+}
+.header__content-image {
+  position: relative;
+  bottom: 179px;
+}
+.header__content-image::before {
+  content: url(../img/spot2.svg);
+  position: relative;
+  left: 214px;
+  top: 97px;
+  z-index: -3;
+}
+.header__content-image::after {
+  content: url(../img/spot3.svg);
+  position: absolute;
+  left: 144px;
+  /* bottom: 750px; */
+  top: -149px;
+  z-index: -3;
+}
+
+.header__content-title::after {
+  content: url(../img/spot.svg);
+  left: 367px;
+  bottom: 251px;
+  z-index: -3;
+  position: relative;
 }
