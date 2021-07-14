@@ -2,6 +2,7 @@
   --black: rgba(87, 87, 87, 1);
   --orange: rgba(251, 147, 0, 1);
   --pink: rgba(255, 240, 220, 1);
+  --lightGray: rgba(130, 130, 130, 1);
 }
 html {
   box-sizing: border-box;
@@ -88,6 +89,7 @@ li:nth-child(5) {
 }
 .header__content-title {
   margin-top: 78px;
+  margin-bottom: 0px;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -120,4 +122,27 @@ li:nth-child(5) {
   bottom: 251px;
   z-index: -3;
   position: relative;
+}
+.header__bottom {
+  margin-top: -140px;
+}
+.header__bottom-inner {
+  display: flex;
+  flex-direction: row;
+}
+.counter {
+  width: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+}
+h3 {
+  width: 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--lightGray);
 }
