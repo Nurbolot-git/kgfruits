@@ -1,11 +1,14 @@
 :root {
   --black: rgba(87, 87, 87, 1);
+  --darkOrange: rgba(251, 147, 51, 1);
   --orange: rgba(251, 147, 0, 1);
   --pink: rgba(255, 240, 220, 1);
   --lightGray: rgba(130, 130, 130, 1);
+  --white: rgba(255, 255, 255, 1);
 }
 html {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 *,
 *::before,
@@ -92,9 +95,10 @@ li:nth-child(5) {
   margin-bottom: 0px;
   font-style: normal;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 47px;
   line-height: 130%;
   letter-spacing: -0.02rem;
+  position: relative;
 }
 .header__content-image {
   position: relative;
@@ -119,9 +123,9 @@ li:nth-child(5) {
 .header__content-title::after {
   content: url(../img/spot.svg);
   left: 367px;
-  bottom: 251px;
+  bottom: 315px;
   z-index: -3;
-  position: relative;
+  position: absolute;
 }
 .header__bottom {
   margin-top: -140px;
@@ -138,11 +142,69 @@ li:nth-child(5) {
   line-height: 160%;
   text-align: center;
 }
-h3 {
+.header__counter-text {
   width: 100px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   color: var(--lightGray);
+  margin: 0;
+}
+.counter::after {
+  content: "+";
+}
+.button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.headerBtn {
+  text-transform: uppercase;
+  padding: 22px 39px;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: var(--darkOrange);
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+}
+.headerBtn::after {
+  content: url(../img/bee.png);
+  position: absolute;
+  bottom: 15px;
+}
+.cart__inner {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cart__box {
+  margin-top: 10px;
+  padding: 0px 15px;
+}
+.cart__box-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 180%;
+  margin-bottom: 5px;
+}
+.cart__box-button {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 10px 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+}
+.cart__box-icon {
+  padding-left: 5px;
+  font-size: 25px;
 }
