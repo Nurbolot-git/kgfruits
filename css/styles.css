@@ -250,6 +250,8 @@ li:nth-child(5) {
   background-color: var(--lightPink);
   border-radius: 25px;
   text-align: center;
+  background-image: url("../img/subBackg.svg");
+  background-position: top;
 }
 .sub-txt {
   display: flex;
