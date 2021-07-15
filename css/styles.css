@@ -208,3 +208,27 @@ li:nth-child(5) {
   padding-left: 5px;
   font-size: 25px;
 }
+.desc__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  justify-content: center;
+}
+.desc-text {
+  margin-top: 50px;
+  max-width: 570px;
+}
+.desc_title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 37px;
+  margin: 0 0 13px 0;
+}
+.desc-info {
+  max-height: 289px;
+  font-size: 19px;
+  line-height: 29px;
+  text-align: left;
+}
