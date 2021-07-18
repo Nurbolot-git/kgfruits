@@ -335,6 +335,7 @@ li:nth-child(5) {
   justify-content: space-around;
   margin-top: 30px;
   list-style: none;
+  text-align: center;
 }
 .li {
   text-align: center;
