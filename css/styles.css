@@ -357,6 +357,7 @@ li:nth-child(5) {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-address {
   width: 235px;
@@ -377,7 +378,9 @@ li:nth-child(5) {
 .footer__location {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 255px;
+  margin-bottom: 20px;
 }
 .footer__location-cor {
   margin-bottom: 40px;
@@ -400,8 +403,20 @@ li:nth-child(5) {
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
-  margin-bottom: 20px;
+  margin-bottom: 68px;
 }
 .footer__addres-copyright {
   margin-top: 20px;
+}
+.footer__location-mail,
+.footer__phone-link,
+.footer__location-link {
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  color: var(--black);
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
 }
