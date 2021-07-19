@@ -335,6 +335,7 @@ li:nth-child(5) {
   line-height: 180%;
   color: var(--orange);
   text-align: center;
+  text-transform: uppercase;
 }
 .about-list {
   display: flex;
